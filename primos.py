@@ -39,7 +39,7 @@ def esPrimo(numero):
 
 
 
-#primos(numero) Devuelve una tupla con todos los números primos menores que su argumento.
+
 
 def primos(numero):
     """
@@ -62,7 +62,9 @@ def primos(numero):
     return tuple(lista)  # Se convierte la lista en una tupla
 
         
-                
+#PENDIENTE:
+# descompon(numero) Devuelve una tupla con la descomposición en factores primos de su argumento.         
+
 
 
 
