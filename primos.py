@@ -39,6 +39,35 @@ def esPrimo(numero):
 
 
 
+#primos(numero) Devuelve una tupla con todos los números primos menores que su argumento.
+
+def primos(numero):
+    """
+    Devuelve una tupla con todos los números primos menores que el número dado.
+
+    >>> primos(10)
+    (2, 3, 5, 7)
+
+    >>> primos(20)
+    (2, 3, 5, 7, 11, 13, 17, 19)
+
+    >>> primos(2)
+    ()
+    """
+    lista = []
+    for prueba in range(2, numero): 
+        if esPrimo(prueba):
+            lista.append(prueba) 
+
+    return tuple(lista)  # Se convierte la lista en una tupla
+
+        
+                
+
+
+
+
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
